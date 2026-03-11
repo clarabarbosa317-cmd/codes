@@ -1,47 +1,81 @@
-#Onde o usuário escolhe o que tem disponível na academia
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Adaptar Treino - Equipamentos</title>
+    <title>FitGym - Adaptar Treino</title>
 </head>
+
 <body>
+
     <header>
         <a href="treinos.html">Voltar</a>
-        <h1>ADAPTAR TREINO</h1>
+        <h1>Adaptar Treino</h1>
     </header>
 
     <main>
-        <h2>Equipamentos disponíveis</h2>
-        <form>
-            <label for="busca-equip">Buscar...</label>
-            <input type="text" id="busca-equip" name="busca-equip">
 
-            <fieldset>
-                <legend>Selecione os equipamentos:</legend>
-                <input type="checkbox" id="halteres" name="equip" value="halteres">
-                <label for="halteres">HALTERES</label><br>
+        <section>
+            <h2>Equipamentos disponíveis</h2>
 
-                <input type="checkbox" id="maquina" name="equip" value="maquina">
-                <label for="maquina">MÁQUINA...</label><br>
+            <form>
 
-                <input type="checkbox" id="corda" name="equip" value="corda">
-                <label for="corda">CORDA...</label>
-            </fieldset>
+                <div>
+                    <label for="busca-equip">Buscar equipamento</label>
+                    <input type="text" id="busca-equip" name="busca-equip">
+                </div>
 
-            <nav>
-                <a href="ver_selecao.html">VER SELEÇÃO</a>
-                <a href="treino_adaptado.html">ADAPTAR</a>
-            </nav>
-        </form>
+                <fieldset>
+                    <legend>Selecione os equipamentos:</legend>
+
+                    <div>
+                        <input type="checkbox" id="halteres" name="equip" value="halteres">
+                        <label for="halteres">
+                            <img src="img/icon-halteres.png" alt="Ícone de halteres">
+                            HALTERES
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="maquina-supino" name="equip" value="maquina-supino">
+                        <label for="maquina-supino">
+                            <img src="img/icon-maquina.png" alt="Ícone de máquina de musculação">
+                            MÁQUINA SUPINO
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="corda-pulley" name="equip" value="corda-pulley">
+                        <label for="corda-pulley">
+                            <img src="img/icon-corda.png" alt="Ícone de corda pulley">
+                            CORDA PULLEY
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <p>
+                    <a href="ver_selecao.html">Ver seleção</a>
+                </p>
+
+                <p>
+                    <a href="treino_adaptado.html">Adaptar treino</a>
+                </p>
+
+            </form>
+        </section>
+
     </main>
 
     <footer>
         <nav>
-            <a href="index.html"><img src="img/home-icon.png" alt="Início"></a>
-            <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
+            <a href="index.html">
+                <img src="img/home-icon.png" alt="Página inicial">
+            </a>
+            <a href="perfil.html">
+                <img src="img/perfil-icon.png" alt="Meu perfil">
+            </a>
         </nav>
     </footer>
+
 </body>
 </html>
