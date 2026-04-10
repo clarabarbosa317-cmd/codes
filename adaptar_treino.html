@@ -13,53 +13,52 @@
         <h1>Adaptar Treino</h1>
     </header>
 
-    <main>
+    <main class="conteudo-principal">
 
         <section>
-            <h2>Equipamentos disponíveis</h2>
+            <h2 class="titulo-secao">Equipamentos disponíveis</h2>
 
-            <form>
+            <form class="formulario-padrao">
 
-                <div>
-                    <label for="busca-equip">Buscar equipamento</label>
-                    <input type="text" id="busca-equip" name="busca-equip">
+                <div class="grupo-busca">
+                    <label class="titulo-campo" for="busca-equip">Buscar equipamento</label>
+                    <input class="campo-padrao" type="text" id="busca-equip" name="busca-equip" placeholder="Ex: Halteres...">
                 </div>
 
-                <fieldset>
-                    <legend>Selecione os equipamentos:</legend>
+                <fieldset class="caixa-selecao">
+                    <legend class="titulo-caixa-selecao">Selecione os equipamentos:</legend>
 
-                    <div>
+                    <div class="item-selecao">
                         <input type="checkbox" id="halteres" name="equip" value="halteres">
-                        <label for="halteres">
-                            <img src="img/icon-halteres.png" alt="Ícone de halteres">
+                        <label for="halteres" class="label-checkbox">
+                            <img src="img/icon-halteres.png" alt="Ícone de halteres" class="icone-equip">
                             HALTERES
                         </label>
                     </div>
 
-                    <div>
+                    <div class="item-selecao">
                         <input type="checkbox" id="maquina-supino" name="equip" value="maquina-supino">
-                        <label for="maquina-supino">
-                            <img src="img/icon-maquina.png" alt="Ícone de máquina de musculação">
-                            MÁQUINA SUPINO
+                        <label for="maquina-supino" class="label-checkbox">
+                            <img src="img/icon-maquina.png" alt="Ícone de máquina de musculação" class="icone-equip">
+                            SUPINO MÁQUINA
                         </label>
                     </div>
 
-                    <div>
+                    <div class="item-selecao">
                         <input type="checkbox" id="corda-pulley" name="equip" value="corda-pulley">
-                        <label for="corda-pulley">
-                            <img src="img/icon-corda.png" alt="Ícone de corda pulley">
+                        <label for="corda-pulley" class="label-checkbox">
+                            <img src="img/icon-corda.png" alt="Ícone de corda pulley" class="icone-equip">
                             CORDA PULLEY
                         </label>
                     </div>
-
                 </fieldset>
 
                 <p>
-                    <a href="ver_selecao.html">Ver seleção</a>
+                    <a href="ver_selecao.html" class="botao-secundario">Ver seleção</a>
                 </p>
 
                 <p>
-                    <a href="treino_adaptado.html">Adaptar treino</a>
+                    <a href="treino_adaptado.html" class="botao-principal">Adaptar treino</a>
                 </p>
 
             </form>
@@ -67,8 +66,8 @@
 
     </main>
 
-    <footer>
-        <nav>
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
             <a href="index.html">
                 <img src="img/home-icon.png" alt="Página inicial">
             </a>
