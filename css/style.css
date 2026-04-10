@@ -171,7 +171,51 @@ footer nav {
     bottom: 0;
     width: 100%;
 
-footer nav img {
-    width: 30px;
-    height: 30px;
+
+
+/* PÁGINA: AGENDAR MODALIDADE */
+
+.campo-padrao {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.titulo-campo {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: -15px;
+}
+
+.destaque-modalidade {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; 
+}
+
+
+.destaque-modalidade strong {
+    color: #e74c3c;
+}
+
+
+.botao-agendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 15px;
 }
