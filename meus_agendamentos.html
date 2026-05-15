@@ -1,28 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meus Agendamentos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGym - Meus Agendamentos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="confirmacao.html">Voltar</a>
+        <a href="index.html" class="voltar">&lt;</a>
         <h1>Agendamentos</h1>
     </header>
 
     <main>
-        <section>
-            <h2>FITGYM EXPRESS</h2>
-            <ul>
-                <li><strong>HORÁRIO:</strong> 6h às 22h</li>
-                <li><strong>DATA:</strong> 29/09/2026</li>
-            </ul>
-        </section>
+        <ul class="lista-agendamentos">
+            <li class="item-agendamento">
+                <div class="item-agendamento-info">
+                    <h2>SmartGym</h2>
+                    <p>Horário: 6:00 às 22:00</p>
+                    <p>Data: 24/04/2026</p>
+                </div>
+                <a href="cancelar.html" class="btn-lixo" aria-label="Cancelar agendamento SmartGym">🗑</a>
+            </li>
+            <li class="item-agendamento">
+                <div class="item-agendamento-info">
+                    <h2>Clube Ace</h2>
+                    <p>Horário: 20:00</p>
+                    <p>Data: 24/04/2026</p>
+                </div>
+                <a href="cancelar.html" class="btn-lixo" aria-label="Cancelar agendamento Clube Ace">🗑</a>
+            </li>
+        </ul>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html"><img src="img/home-icon.png" alt="Início"></a>
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
+            <a href="index.html"><img src="img/home-icon.svg" alt="Início"></a>
             <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
         </nav>
     </footer>

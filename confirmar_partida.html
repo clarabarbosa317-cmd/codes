@@ -1,27 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Confirmar Agendamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGym - Confirmar Agendamento</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="agendar_modalidade.html">&lt; Voltar</a>
-        <h1>AGENDAMENTO</h1>
+        <a href="agendar_modalidade.html" class="voltar">&lt; Agendamento</a>
+        <h1>Agendamento</h1>
     </header>
 
     <main>
-        <article>
-            <h2>CLUBE ACE</h2>
-            <p>RUA DOS QUADRADOS, 500</p>
-            <p>29/09/2026, 20:00</p>
-            <p>R$ 20,00</p>
-            <p>JOGAR COM: PROFESSOR</p>
+        <article class="card-confirmacao">
+            <div class="card-confirmacao-cabecalho">
+                <img src="img/icon-corda.png" alt="Ícone Clube Ace">
+                <div class="info-local">
+                    <h2>CLUBE ACE</h2>
+                    <p>Rua dos Quadrados, 500</p>
+                </div>
+            </div>
+            <ul class="card-confirmacao-corpo">
+                <li>24/04/2026, 20:00</li>
+                <li>R$ 40,00</li>
+                <li>JOGAR COM: Prof. Rodrigo</li>
+            </ul>
         </article>
 
-        <nav>
-            <a href="sucesso_partida.html">CONFIRMAR ✓</a>
-        </nav>
+        <a href="sucesso_partida.html" class="btn-primario">CONFIRMAR ✓</a>
     </main>
+
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
+            <a href="index.html"><img src="img/home-icon.svg" alt="Início"></a>
+            <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
+        </nav>
+    </footer>
 </body>
 </html>

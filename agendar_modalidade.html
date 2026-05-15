@@ -1,42 +1,64 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Agendar Squash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGym - Agendar Squash</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="agendar.html">&lt; Voltar</a>
-        <h1>Squash</h1>
+        <a href="agendar.html" class="voltar">&lt; Agendar</a>
+        <h1>Agendar</h1>
     </header>
 
     <main>
-        <form>
-            <label class="destaque-modalidade">MODALIDADE: <strong>Squash</strong></label>
-            
-            <label class="titulo-campo" for="data">DATA</label>
-            <input class="campo-padrao" type="date" id="data" value="2026-09-29">
+        <form class="formulario-padrao">
+            <div class="grupo-campo">
+                <label class="rotulo-campo">Modalidade</label>
+                <div class="valor-campo valor-campo-destaque">
+                    <span>SQUASH</span>
+                    <span>›</span>
+                </div>
+            </div>
 
-            <label class="titulo-campo" for="horario">HORÁRIO</label>
-            <input class="campo-padrao" type="text" id="horario" value="18:00 às 21:00">
+            <div class="grupo-campo">
+                <label class="rotulo-campo" for="data">Data</label>
+                <div class="valor-campo">
+                    <input type="date" id="data" value="2026-04-24">
+                    <span>›</span>
+                </div>
+            </div>
 
-            <label class="titulo-campo" for="nivel">NÍVEL</label>
-            <select class="campo-padrao" id="nivel">
-                <option>Intermediário</option>
-                <option>Iniciante</option>
-                <option>Avançado</option>
-            </select>
+            <div class="grupo-campo">
+                <label class="rotulo-campo" for="horario">Horário</label>
+                <div class="valor-campo">
+                    <input type="text" id="horario" value="18:00 às 21:00">
+                    <span>›</span>
+                </div>
+            </div>
 
-            <nav>
-                <a class="botao-agendar" href="confirmar_partida.html">AGENDAR</a>
-            </nav>
+            <div class="grupo-campo">
+                <label class="rotulo-campo" for="nivel">Nível</label>
+                <div class="valor-campo">
+                    <select id="nivel">
+                        <option>INICIANTE</option>
+                        <option>INTERMEDIÁRIO</option>
+                        <option>AVANÇADO</option>
+                    </select>
+                    <span>›</span>
+                </div>
+            </div>
+
+            <a href="confirmar_partida.html" class="btn-primario">AGENDAR</a>
         </form>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html">Home</a>
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
+            <a href="index.html"><img src="img/home-icon.svg" alt="Início"></a>
+            <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
         </nav>
     </footer>
 </body>

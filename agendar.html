@@ -1,35 +1,47 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitGym - Agendar Partida</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="index.html">&lt; Voltar</a>
-        <h1>AGENDAR</h1>
+        <a href="index.html" class="voltar">&lt; Voltar</a>
+        <h1>Agendar</h1>
     </header>
 
     <main>
+        <div class="campo-busca">
+            <input type="text" placeholder="BUSCAR PARTIDA">
+            <span>🔍</span>
+        </div>
+
         <section>
-            <input type="text" placeholder="BUSCAR PARTIDAS">
-            <h2>Últimas buscas</h2>
-            <nav>
-                <ul>
-                    <li><a href="busca_detalhada.html">Futebol</a></li>
-                    <li><a href="agendar_modalidade.html">SQUASH</a></li>
-                </ul>
+            <h2 class="titulo-secao">Últimas buscas</h2>
+            <nav class="lista-itens">
+                <a href="sem_tela.html" class="item-lista">
+                    <img src="img/icon-halteres.png" alt="Ícone futebol">
+                    <span class="item-lista-texto">Futebol</span>
+                    <span class="seta">›</span>
+                </a>
+                <a href="agendar_modalidade.html" class="item-lista">
+                    <img src="img/icon-corda.png" alt="Ícone squash">
+                    <span class="item-lista-texto">Squash</span>
+                    <span class="seta">›</span>
+                </a>
             </nav>
         </section>
 
-        <a href="meus_agendamentos.html">AGENDAMENTOS</a>
+        <a href="meus_agendamentos.html" class="btn-secundario">AGENDAMENTOS</a>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="perfil.html">Perfil</a>
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
+            <a href="index.html"><img src="img/home-icon.svg" alt="Início"></a>
+            <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
         </nav>
     </footer>
 </body>

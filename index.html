@@ -1,39 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitGym - Home</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo-fitgym.png" alt="Logo FitGym">
-        <p>Olá, Ricardo<br>São Paulo, SP</p>
+    <header class="cabecalho-home">
+        <h1><img src="img/logo-fitgym.png" alt="Logo FitGym"></h1>
+        <p class="info-usuario">OLÁ, RICARDO <span>São Paulo, SP</span></p>
         <img src="img/menu-icon.png" alt="Abrir menu">
     </header>
 
     <main>
-        <div id="mapa">
-            <a href="detalhes_academia.html">
-                <img src="img/mapa-preview.png" alt="Mapa mostrando FitGym a 500m">
-                <h2>FitGym 500m ★★★★</h2>
-            </a>
+        <div class="mapa-preview">
+            <img src="img/mapa-preview.png" alt="Mapa mostrando academias próximas">
         </div>
 
-        <nav>
-            <a href="agendar.html">AGENDAR</a>
-            <a href="treinos.html">TREINOS</a>
+        <nav class="lista-academias">
+            <a href="detalhes_academia.html" class="item-academia">
+                <div class="item-academia-info">
+                    <h2>SmartGym</h2>
+                    <p>500m de compatibilidade ★★★★★</p>
+                </div>
+                <span class="seta">›</span>
+            </a>
+            <a href="detalhes_academia.html" class="item-academia">
+                <div class="item-academia-info">
+                    <h2>SixGym</h2>
+                    <p>900m de compatibilidade ★★★★</p>
+                </div>
+                <span class="seta">›</span>
+            </a>
         </nav>
 
-        <div id="busca">
+        <nav class="grupo-botoes">
+            <a href="agendar.html" class="btn-primario">AGENDAR</a>
+            <a href="treinos.html" class="btn-primario">TREINOS</a>
+        </nav>
+
+        <div class="busca-inferior">
             <input type="text" placeholder="BUSCAR...">
+            <span>🔍</span>
         </div>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html"><img src="img/home-icon.png" alt="Início"></a>
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
+            <a href="index.html"><img src="img/home-icon.svg" alt="Início"></a>
             <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
         </nav>
     </footer>

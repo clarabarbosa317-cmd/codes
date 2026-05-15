@@ -1,46 +1,65 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Treino Adaptado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGym - Treino Adaptado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="adaptar_treino.html">Voltar</a>
-        <h1>TREINO ADAPTADO</h1>
+        <a href="adaptar_treino.html" class="voltar">&lt;</a>
+        <h1>Treino Adaptado</h1>
     </header>
 
     <main>
-        <p>Peito e tríceps</p>
-        
-        <article>
-            <h2>Supino Inclinado</h2>
-            <img src="img/icon-halteres.png" alt="Halteres">
-            <a href="video_supino.html">Vídeo</a>
-        </article>
+        <p class="subtitulo-grupo">Peito e Tríceps</p>
 
-        <article>
-            <h2>Crucifixo Inclinado</h2>
-            <img src="img/icon-halteres.png" alt="Halteres">
-            <a href="video_crucifixo.html">Vídeo</a>
-        </article>
+        <ul class="lista-exercicios">
+            <li>
+                <article class="card-exercicio">
+                    <h2>Supino Inclinado</h2>
+                    <ul class="icones-exercicio">
+                        <li><img src="img/icon-halteres.png" alt="Halteres"></li>
+                        <li><img src="img/icon-halteres.png" alt="Halteres"></li>
+                    </ul>
+                    <a href="sem_tela.html" class="btn-video">Vídeo</a>
+                </article>
+            </li>
 
-        <article>
-            <h2>Tríceps Pulley</h2>
-            <p>Corda Pulley</p>
-            <a href="video_triceps.html">Vídeo</a>
-        </article>
+            <li>
+                <article class="card-exercicio">
+                    <h2>Crucifixo Inclinado</h2>
+                    <ul class="icones-exercicio">
+                        <li><img src="img/icon-halteres.png" alt="Halteres"></li>
+                        <li><img src="img/icon-halteres.png" alt="Halteres"></li>
+                    </ul>
+                    <a href="sem_tela.html" class="btn-video">Vídeo</a>
+                </article>
+            </li>
 
-        <article>
-            <h2>Tríceps Testa</h2>
-            <a href="video_testa.html">Vídeo</a>
-        </article>
+            <li>
+                <article class="card-exercicio">
+                    <h2>Tríceps Pulley</h2>
+                    <p>Corda Pulley</p>
+                    <a href="sem_tela.html" class="btn-video">Vídeo</a>
+                </article>
+            </li>
+
+            <li>
+                <article class="card-exercicio">
+                    <h2>Tríceps Testa</h2>
+                    <p>Corda Pulley</p>
+                    <a href="sem_tela.html" class="btn-video">Vídeo</a>
+                </article>
+            </li>
+        </ul>
     </main>
 
-    <footer>
-        <nav>
-            <a href="index.html"><img src="img/home-icon.png" alt="Início"></a>
+    <footer class="rodape-app">
+        <nav class="menu-inferior">
+            <a href="index.html"><img src="img/home-icon.svg" alt="Início"></a>
             <a href="perfil.html"><img src="img/perfil-icon.png" alt="Meu Perfil"></a>
         </nav>
     </footer>
